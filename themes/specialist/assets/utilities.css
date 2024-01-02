@@ -121,6 +121,9 @@
 .decoration\:none {
     text-decoration: none;
 }
+.decoration\:underline {
+    text-decoration: underline;
+}
 
 .weight\:900 {
     font-weight: 900;
@@ -220,4 +223,16 @@
 
 .border\:white {
     border-color: white;
+}
+
+.gap\:1 {
+    gap: var(--s1);
+}
+
+.gap\:2 {
+    gap: var(--s2);
+}
+
+.gap\:3 {
+    gap: var(--s3);
 }
