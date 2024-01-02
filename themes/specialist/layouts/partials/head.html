@@ -1,0 +1,16 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+{{ $config := resources.Get "config.css" }}
+<link rel="stylesheet" href="{{ $config.RelPermalink }}" />
+
+{{ $elements := resources.Get "elements.css" }}
+<link rel="stylesheet" href="{{ $elements.RelPermalink }}" />
+
+{{ $layout := resources.Get "layout.css" }}
+<link rel="stylesheet" href="{{ $layout.RelPermalink }}" />
+
+{{ $blocks := resources.Get "blocks.css" }}
+<link rel="stylesheet" href="{{ $blocks.RelPermalink }}" />
+
+{{ $utilities := resources.Get "utilities.css" }}
+<link rel="stylesheet" href="{{ $utilities.RelPermalink }}" />

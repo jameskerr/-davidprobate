@@ -1,0 +1,81 @@
+html {
+    line-height: var(--line-height);
+    font-family: var(--font-body);
+    font-size: calc(0.25vw + 1rem);
+    color: var(--color-fg);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    border-color: var(--color-border);
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+blockquote {
+    max-inline-size: var(--measure);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    line-height: var(--line-height-less);
+}
+
+h1,
+.h1 {
+    font-size: var(--s4);
+    letter-spacing: 0.05em;
+}
+
+h2,
+.h2 {
+    font-size: var(--s3);
+}
+
+h3,
+.h3 {
+    font-size: var(--s2);
+}
+
+h4,
+.h4 {
+    font-size: var(--s1);
+}
+
+h5,
+.h5 {
+    font-size: var(--s0);
+}
+
+p+p {
+    margin-block-start: var(--s-1);
+}
+
+hr {
+    border: none;
+    border-bottom: 2px solid var(--color-border);
+    max-inline-size: 5em;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--color-border);
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,33 @@
+:root {
+    --font-heading: "Superior Title";
+    --font-body: "Proxima Nova";
+    --measure: 65ch;
+    --ratio: 1.45;
+    --width-page: 1040px;
+
+    --s-7: calc(var(--s-6) / var(--ratio));
+    --s-6: calc(var(--s-5) / var(--ratio));
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio));
+    --s-2: calc(var(--s-1) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+
+    --color-fg: #241F1A;
+    --color-fg-less: #ead1a8;
+    --color-border: var(--color-fg-less);
+    --color-bg-secondary: #F6F3EF;
+    --color-bg: white;
+    --color-blue: #0d2446;
+
+    --line-height: var(--ratio);
+    --line-height-less: calc(var(--ratio) * 0.8);
+
+    --height-header: var(--s2);
+}

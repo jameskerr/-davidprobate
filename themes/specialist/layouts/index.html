@@ -1,0 +1,110 @@
+{{ define "main" }}
+<main class="home-main">
+  {{ $cover := resources.Get "home-cover.jpg" }}
+  <div class="cover home-hero">
+    {{- partial "header.html" . -}}
+
+    <section class="principle box" style="padding-bottom: var(--s5);">
+      <div class="center-page">
+        <div class="stack-1">
+          <div class="stack--1">
+            <h1 class="weight:900">
+              David <span class="weight:100">Kerr</span>
+            </h1>
+            <h3 class="weight:100 font:body">Certified Probate Realtor</h3>
+          </div>
+          <hr />
+          <h4 class="weight:100 style:italic color:fg-less letter-spacing:lg">
+            Serving Southern California
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <div class="stack--3" style="margin-block-end: var(--s-3)">
+      <div class="taper" style="height: var(--s-7)"></div>
+      <div class="taper" style="height: var(--s-7)"></div>
+      <div class="taper" style="height: var(--s-7)"></div>
+    </div>
+  </div>
+
+  <section class="bg:secondary">
+    <div class="center-page">
+      <div class="switcher align:center" style="gap: var(--s3)">
+        <div
+          class="frame aspect:portrait border:solid"
+          style="border-width: 8px"
+        >
+          <img src="/profile-1.jpg" style="object-position: bottom center" />
+        </div>
+        <div class="stack-5" style="flex: 2">
+          <div class="stack-1">
+            <p class="h2 font:heading weight:900">Hello,</p>
+            {{ $bio := resources.Get "bio.md" }} {{ $bio.Content | markdownify
+            }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="center-page stack-1">
+      <h2>About You</h2>
+      <hr />
+      <p>
+        You may have just experienced the loss of a loved one and now you’ve got
+        stuff going on. The world doesn’t stop and now you’ve been thrown into
+        this world of probatge with courts and judgest and everything. You’re
+        looking for someone who cares to guide you though this process. Someone
+        on your team who you can trust.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg:blue">
+    <div class="center-page stack-4">
+      <div class="text:center color:white">
+        <h2>My client's experiences are what matter the most to me.</h2>
+      </div>
+      <div>
+        <div class="testimony-cards stack-4">
+          {{ range first 3 (where .Site.RegularPages "Section" "testimonials")
+          }}
+          <blockquote class="color:white box">
+            <p>{{ .Summary }}.. <a href="{{ .Permalink }}">Read More</a></p>
+            <p class="color:fg-less style:normal">{{.Title}}</p>
+          </blockquote>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg:secondary">
+    <div class="center-page">
+      <div class="switcher align:center" style="gap: var(--s3)">
+        <div class="bg:blue frame aspect:16/9 max-width:measure">
+          <video></video>
+        </div>
+        <h2 class="h3">I will be on your side throughout the process.</h2>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="center-page stack-4">
+      <div class="switcher align:center">
+        <div class="stack-1" style="flex: 2">
+          <h2>Please, give me a call.</h2>
+          <p>I would love the opportunity to learn about your situation.</p>
+          <p class="h3">(949) 293-3017</p>
+        </div>
+        <div class="frame aspect:1/1 radius:50% border:solid border:thick">
+          <img src="/profile-2.jpg" style="object-position: 0 0" />
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}

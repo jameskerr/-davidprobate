@@ -1,0 +1,38 @@
+.testimony-cards>:nth-child(even) {
+    margin-inline-start: auto;
+}
+
+.site-header {
+    min-block-size: var(--height-header);
+}
+
+.site-header a {
+    text-decoration: none;
+}
+
+.home-hero {
+    --cover-size: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-image: url(/home-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-blend-mode: overlay;
+    justify-content: end;
+    position: relative;
+    padding: 0
+}
+
+.home-main>*+* {
+    padding-block: 6rem;
+}
+
+.site-footer {
+    padding-block: var(--s4);
+}
+
+.taper {
+    height: var(--s0);
+    background: var(--color-bg-secondary);
+}

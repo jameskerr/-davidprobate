@@ -1,0 +1,11 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'David Kerr Probate Realtor'
+summaryLength = 35
+theme = 'specialist'
+
+[params]
+Name = 'David Kerr'
+Title = 'Probate Realtor'
+Tagline = 'Serving Southern California'
+ProfileImage = '/profile.jpg'
