@@ -1,6 +1,6 @@
 :root {
-    --font-heading: "Superior Title";
-    --font-body: "Proxima Nova";
+    --font-heading: "superior-title";
+    --font-body: "proxima-nova";
     --measure: 65ch;
     --ratio: 1.45;
     --width-page: 1040px;
